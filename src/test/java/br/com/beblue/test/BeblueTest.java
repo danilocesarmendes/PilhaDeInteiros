@@ -23,6 +23,8 @@ public class BeblueTest {
 	public void push() {
 		System.out.println("@Before - runBeforeTestMethod");
 
+		StackBeblue.push(2147483647);
+		StackBeblue.push(-2147483647);
 		StackBeblue.push(100);
 		StackBeblue.push(80);
 		StackBeblue.push(2090);
@@ -45,14 +47,14 @@ public class BeblueTest {
 		Assert.assertTrue(!StackBeblue.removeObject(-8888));
 
 		// espera um retorno true
-		Assert.assertTrue(StackBeblue.removeObject(80));
+		Assert.assertTrue(StackBeblue.removeObject(-2147483647));
 	}
 
 	@Test
 	public void minimumValue() {
 
 		// espera um retorno true
-		Assert.assertTrue(StackBeblue.min() == -10);
+		Assert.assertTrue(StackBeblue.min() == -2147483647);
 	}
 
 	@After

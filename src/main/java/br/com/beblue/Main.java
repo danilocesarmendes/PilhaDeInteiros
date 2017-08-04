@@ -4,6 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// creating stack
+		StackBeblue.push(2147483647);
 		StackBeblue.push(100);
 		StackBeblue.push(80);
 		StackBeblue.push(2090);
@@ -11,8 +12,11 @@ public class Main {
 		StackBeblue.push(-10);
 		StackBeblue.push(555);
 		StackBeblue.push(444);
+		StackBeblue.push(-2147483647);
 		StackBeblue.push(2342);
 		StackBeblue.push(8080);
+						
+		
 
 		StackBeblue.showStack();
 
