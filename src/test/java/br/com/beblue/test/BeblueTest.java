@@ -1,16 +1,13 @@
 package br.com.beblue.test;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import br.com.beblue.StackBeblue;
-import junit.framework.Assert;
 
 public class BeblueTest {
 
